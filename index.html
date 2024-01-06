@@ -23,6 +23,19 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+
+      <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the current domain
+      var currentDomain = window.location.hostname;
+
+      // Find the span element by class
+      var spanElement = document.querySelector('.footer span');
+
+      // Update the content with the current domain
+      spanElement.textContent = currentDomain;
+    });
+  </script>
   </head>
   <body>
     <div class="container">
